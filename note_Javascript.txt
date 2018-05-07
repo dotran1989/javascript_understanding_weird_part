@@ -1,0 +1,5 @@
+1. Global
+
+_ window = this
+
+_ variable and function not inside function -> global
