@@ -74,6 +74,24 @@ _ Variable environment: where the variables live (global object - a window in a 
 
 _ myVar declare three times -> they're distince, unique and don't touch each other. Each of these 'myVar' is sitting in its own execution context.
 
+function b() {
+    var myVar;
+    console.log(myVar);//undefined
+}
+
+// a's execution context
+function a() {
+    var myVar = 2;
+    console.log(myVar);//2
+    b();
+}
+
+// global execution context
+var myVar = 1;
+console.log(myVar); //1
+a();
+console.log('a:' + myVar); // a:1
+
 ----------------------------
 16 - Scope chain
 
@@ -87,3 +105,24 @@ _ Scope: where can I access a variable.
 _ Chain: is those links of outer environment references.
 
 _ Lexical: that is where it was physically written in your code.
+
+----------------------------
+17 - Scope, ES6 and let
+
+_ Scope: where a variable is available in your code. And if it's truly the same variable, or a new copy.
+
+_ let: allows Javascript engine to use what's called block scoping.
+
+----------------------------
+18 - What about Asynchronous Callbakcs
+
+_ Asynchronous: more than one at a time.
+
+_ The browser is going to place that click event on the event queue. When Javascript going to look at that event queue and process it?
+-> the function completed and the global code completed, before it went off and created an execution context for that clickHander() function. Why?
+
+_ Because the Javascript engine won't look at the event queue unitl the execution stack is empty.
+
+_ It runs normal code synchronous, then it just will continue to watch that event queue in the loop. Deals with asynchrnous events.
+
+_ Any events that happen outside of the engine get placed into that queue.
