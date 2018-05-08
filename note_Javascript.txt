@@ -73,3 +73,17 @@ When it finished, it popped off the stack.
 _ Variable environment: where the variables live (global object - a window in a browser).
 
 _ myVar declare three times -> they're distince, unique and don't touch each other. Each of these 'myVar' is sitting in its own execution context.
+
+----------------------------
+16 - Scope chain
+
+_ Every execution context has a reference to its outer environment.
+
+_ Particular execution context, if it can't find that variable, it will look at the outer reference and go look for variables there.
+Depends on where the function sits lexically.
+
+_ Scope: where can I access a variable.
+
+_ Chain: is those links of outer environment references.
+
+_ Lexical: that is where it was physically written in your code.
