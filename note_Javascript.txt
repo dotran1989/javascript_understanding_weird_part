@@ -66,3 +66,10 @@ The variables within it are set up during the creation phase. And code is execut
 
 _ Everytime a function is invoked, even if it's invoking itself, a new execution context is created, put on top of the stack.
 When it finished, it popped off the stack.
+
+----------------------------
+15 - Function, Context and Variable Environments
+
+_ Variable environment: where the variables live (global object - a window in a browser).
+
+_ myVar declare three times -> they're distince, unique and don't touch each other. Each of these 'myVar' is sitting in its own execution context.
