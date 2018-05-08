@@ -44,3 +44,25 @@ _ Uncaught ReferenceError: a is not defined -> because that initial execution co
 So it never set up the memory space.
 
 _ Never set 'a = undefined' -> cannot set anything, only use for debug
+
+
+----------------------------
+13 - Javascript is Single thread, Synchronous execution in its behavior
+
+_ Single thread: one command at a time.
+
+_ Under hood of browser, maybe not.
+
+_ Synchronous: only one thing is happening at a time.
+
+----------------------------
+14 - Function invocation and The execution stack
+
+_ b() finishes, because it's at the top of the stack, it will get popped off the stack.
+Then a(), then back down to Global Execution Context.
+
+_ Every function is called, a new execution context and 'this  variable is created for that function.
+The variables within it are set up during the creation phase. And code is executed line by line.
+
+_ Everytime a function is invoked, even if it's invoking itself, a new execution context is created, put on top of the stack.
+When it finished, it popped off the stack.
