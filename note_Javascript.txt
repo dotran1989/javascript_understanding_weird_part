@@ -1,5 +1,34 @@
-1. Global
+Section 1. Execution Global
+
+_ Your code is run, because your code is wrapped inside an execution context.
+
+_ Javascript engine creates a Global object 'window' and a special variable called 'this'.
 
 _ window = this
 
-_ variable and function not inside function -> global
+_ variable and function 'not inside function'  -> global
+
+================================
+Section 2. Creation and Hoisting
+
+_ 1st phrase: Execution Context is create (CREATION PHASE).
+
+_ Hoisting: It's not actually moving code to the top of the page.
+
+_ Before your code begins to executed line by line, The Javascript engine has already set aside memory space 
+for the variables and all of the function that you've created.
+
+_ When Javascript engine sets up the memory space for 'a', it doesn't know what its value. So instead, it puts a placeholder called 'undefined'.
+
+_ All variables in Javascript are initially set to 'undefined', and functions are sitting in memory in their entirety.
+
+_ Code:
+
+b(); // Called b!
+console.log(a); // undefined -> hoisting 
+
+var a = 'Hello World'; // delete this line -> Uncaught ReferenceError: a is not defined
+
+function b() {
+    console.log('Called b!');
+}
