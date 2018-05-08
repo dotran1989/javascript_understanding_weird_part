@@ -9,7 +9,9 @@ _ window = this
 _ variable and function 'not inside function'  -> global
 
 ================================
-Section 2. Creation and Hoisting
+Section 2.
+
+10 - Creation and Hoisting
 
 _ 1st phrase: Execution Context is create (CREATION PHASE).
 
@@ -32,3 +34,13 @@ var a = 'Hello World'; // delete this line -> Uncaught ReferenceError: a is not 
 function b() {
     console.log('Called b!');
 }
+
+----------------------------
+11 - Javascript and undefined
+
+_ 'undefined': that means the variable hasn't been set. It's actually taking up memory space.
+
+_ Uncaught ReferenceError: a is not defined -> because that initial execution context creation (creation phase), when it went through it didn't find 'a' var.
+So it never set up the memory space.
+
+_ Never set 'a = undefined' -> cannot set anything, only use for debug

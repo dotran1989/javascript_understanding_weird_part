@@ -1,11 +1,11 @@
-b(); // Called b!
-console.log(a); // undefined -> hoisting 
+var a; // undefined
+// var a = 'Hello'; // defined
+console.log(a);
 
-var a = 'Hello World'; // delete this line -> Uncaught ReferenceError: a is not defined
+// a = undefined; // never set undefined, use debug
 
-function b() {
-    console.log('Called b!');
+if (a === undefined) {
+    console.log('a is undefined');
+} else {
+    console.log('a is defined');
 }
-
-// b();
-// console.log(a);
