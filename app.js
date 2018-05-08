@@ -1,11 +1,17 @@
-var a; // undefined
-// var a = 'Hello'; // defined
+function b() {
+    console.log('Called b!');
+}
+
+b();
+
 console.log(a);
 
-// a = undefined; // never set undefined, use debug
+var a = 'Hello World!';
 
-if (a === undefined) {
-    console.log('a is undefined');
-} else {
-    console.log('a is defined');
-}
+console.log(a);
+
+// if (a === undefined) {
+//     console.log('a is undefined');
+// } else {
+//     console.log('a is defined');
+// }
