@@ -120,9 +120,37 @@ _ Asynchronous: more than one at a time.
 
 _ The browser is going to place that click event on the event queue. When Javascript going to look at that event queue and process it?
 -> the function completed and the global code completed, before it went off and created an execution context for that clickHander() function. Why?
-
+ 
 _ Because the Javascript engine won't look at the event queue unitl the execution stack is empty.
 
 _ It runs normal code synchronous, then it just will continue to watch that event queue in the loop. Deals with asynchrnous events.
 
-_ Any events that happen outside of the engine get placed into that queue.
+_ Any events that happen outside of the engine get placed into that queue. 
+
+
+================================
+Section 3. Types and Operation
+
+19 - Types and Javascript
+
+_ Dynamic Typing: you don't tell the engine what type of data a variable holds, it figures it out while your code is running.
+
+----------------------------
+20- Primitive Types: a type of data that represents a single value
+
+_ 'undefined': represents lack of existence (you shouldn't set a variable to 'this') -> leave for engine
+_ 'null': represents lack of existence (you can set a variable to 'this') -> you can use null
+_ 'boolean': true or false
+_ 'number': floating point number (there's always some decimals). Javascript has only one type 'number'.
+_ 'string': a sequence of charaters (both '' and "" can be used).
+_ 'symbol': used in ES6
+
+----------------------------
+21- Operation precedence and associativity
+
+_ Operation precedence: which operator function gets called first (HIGHER precedence wins).
+
+_ associativity: what order operator functions get called in: left-to-right or right-to-left-to-right WHEN functions have the same precedence.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
