@@ -154,3 +154,8 @@ _ associativity: what order operator functions get called in: left-to-right or r
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
+----------------------------
+24- Coercion
+
+_ Converting a value from one type to another.
+
