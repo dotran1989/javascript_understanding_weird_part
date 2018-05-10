@@ -19,18 +19,17 @@ b();
 var c = {
     name: 'The c object',
     log: function() { // function in object.
-        
-
+        var self = this; // Make sure pointing right object -> common pattern. 'self' points same location in memory as 'this' keyword.
 
         this.name = 'Updated c object'; // {name: "Updated c object", log: ƒ}. Can access properties and method of this object.
-        console.log(this);
+        console.log(self);
 
         // * Lot of people do this bug - function in function, in object.
         var setName = function(newName) {
-            this.name = newName; // 'this' still points to global object.
+            self.name = newName; // 'this' still points to global object.
         }
         setName('Updated again! The c object');
-        console.log(this); // {name: "Updated c object", log: ƒ}. Although in 'window', name is changed 'Updated again! The c object'
+        console.log(self); // {name: "Updated again! The c object", log: ƒ}
         
     }
 }
