@@ -159,9 +159,18 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Oper
 
 _ Converting a value from one type to another.
 
-----------------------------
-32- Faking namespace
+================================
+Section 4. Types and Operation
+
+32- Objects and Functions
 
 _ Namespace: a container for variables and functions
 
 JSON: JavaScript Object Notation
+
+----------------------------
+34- Functions are Objects
+
+_ First class functions: everything you can do with other types, you can do with functions.
+
+_ Assign them to variables, passthem around, create them on fly.
