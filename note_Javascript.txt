@@ -173,4 +173,22 @@ JSON: JavaScript Object Notation
 
 _ First class functions: everything you can do with other types, you can do with functions.
 
-_ Assign them to variables, passthem around, create them on fly.
+_ Assign them to variables, passthem around, create them on fly.    
+
+----------------------------
+36- By Value by reference
+
+_ var a = 3. Variable 'a' has an adress location 0x001. The reference is really to a location in memory.
+
+_ b = a -> 'b' new variable, points to a new address 0x002 and the same value 3.
+
+=> by value
+
+_ set 'a' equal to an object and address location is 0x001.
+
+_ b = a -> points to the same location in memory 0x001. No new object to create. No copy object to create.
+
+=> by reference
+
+_ 'mutate': to change something.
+_ 'immutable': means it can't be changed.
