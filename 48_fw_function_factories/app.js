@@ -18,4 +18,3 @@ var greetSpanish = makeGreeting('es'); // call second time, get a new execution 
 
 greetEnglish('John', 'Doe'); // create a new execution context, point to outer environment makeGreeting('en')
 greetSpanish('John', 'Doe');
-

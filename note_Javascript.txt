@@ -216,3 +216,10 @@ _ Execution context has it's space in memory, where the variables and functions 
 _ At the moment that execution context finishes, the memory space is still there. 'whatToSay' is still there.
 
 _ When call sayHi(), it's execution context still has a reference outer lexical environment and find 'whatToSay'.
+
+----------------------------
+49- Closures and callback
+
+_ Callback function: a funtion you give to another function, to be run when the other is finished.
+
+_ I call function A, and give it function B. When A finishes, it calls B -> callback.
