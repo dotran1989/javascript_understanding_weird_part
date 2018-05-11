@@ -173,7 +173,7 @@ JSON: JavaScript Object Notation
 
 _ First class functions: everything you can do with other types, you can do with functions.
 
-_ Assign them to variables, passthem around, create them on fly.    
+_ Assign them to variables, pass them around, create them on fly.    
 
 ----------------------------
 36- By Value by reference
@@ -197,3 +197,13 @@ _ 'immutable': means it can't be changed.
 39- Arguments and Spread
 
 _ Arguments: the parameters you pass to a function, contain a list of value.
+
+----------------------------
+42- Dangerous - Automatic Semicolon Insertion
+
+_ return<Enter> -> Javascript engine automatically create semicolon ';'
+
+----------------------------
+43- Whitespace
+
+_ Whitespace: invisible characters that create literal 'space' in your written code. Carriage retunrs, tabs, spaces.
