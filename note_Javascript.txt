@@ -252,3 +252,10 @@ _ All objects have a prototype property. The property is simply a reference to a
 _ 'obj.prop2' looks for on 'obj' itself. Do not find 'prop2', it next goes to the prototype. Find and return it.
 
 _ 'obj2.props2' is the same spot in memory as 'obj.props2'
+
+----------------------------
+55 - Everything is Object
+
+_ Everything has prototype, except base object.
+
+_ Base object is bottom of prototype chain.
