@@ -259,3 +259,8 @@ _ 'obj2.props2' is the same spot in memory as 'obj.props2'
 _ Everything has prototype, except base object.
 
 _ Base object is bottom of prototype chain.
+
+----------------------------
+56 - Reflection and Extend
+
+_ Reflection: an object can look at itself, listing and changing it's properties and methods.
