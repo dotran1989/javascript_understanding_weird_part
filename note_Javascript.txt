@@ -230,3 +230,25 @@ _ I call function A, and give it function B. When A finishes, it calls B -> call
 _ All functions in JavaScript can access three methods.
 
 _ Function currying: creating a copy of a function but with some preset (dat truoc) parameters
+
+----------------------------
+53 - Classical and Prototypal Inheritance
+
+_ Inheritance: one object gets access to the properties and methods of another object.
+
+_ Classical Inheritance: verbose
++ friend
++ protected
++ private
++ interface
+
+_ Prototypal Inheritance: simple
++ flexible
++ extensible
++ easy to understand
+
+_ All objects have a prototype property. The property is simply a reference to another object (proto).
+
+_ 'obj.prop2' looks for on 'obj' itself. Do not find 'prop2', it next goes to the prototype. Find and return it.
+
+_ 'obj2.props2' is the same spot in memory as 'obj.props2'
