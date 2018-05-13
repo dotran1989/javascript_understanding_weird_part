@@ -264,3 +264,10 @@ _ Base object is bottom of prototype chain.
 56 - Reflection and Extend
 
 _ Reflection: an object can look at itself, listing and changing it's properties and methods.
+
+----------------------------
+57 - Function constructor
+
+_ A normal function that is used to construct objects.
+
+_ The 'this' variable points a new empty object, and that object is returned from the function automatically.
