@@ -264,3 +264,8 @@ _ Base object is bottom of prototype chain.
 56 - Reflection and Extend
 
 _ Reflection: an object can look at itself, listing and changing it's properties and methods.
+
+----------------------------
+63 - Object.create
+
+_ Polyfill: code that adds a feature which the engine may lack.
