@@ -269,3 +269,11 @@ _ Reflection: an object can look at itself, listing and changing it's properties
 63 - Object.create
 
 _ Polyfill: code that adds a feature which the engine may lack.
+
+----------------------------
+64 - ES6 and Classes
+_ Class is not an object, it's just a definition, it's like a template.
+
+_ JavaScript doesn't have class. This is an object.
+
+_ Syntactic sugar: a different way to type something that doesn't change how it works under the hood.
