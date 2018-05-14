@@ -51,3 +51,18 @@ var a = new Number(3)
 a.isPositive()
 true
 */
+
+// 61 - Dangerous
+
+/* var a = 3 // primitive
+var b = new Number(3) // object
+a == b // coersion
+true
+a === b // not equal
+false
+
+var c = Number(3)
+a == c
+true
+a === c
+true */
