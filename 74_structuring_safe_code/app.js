@@ -1,5 +1,5 @@
 var g = G$('John', 'Doe');
-g.greet().setLang('es').log();
+// g.greet().setLang('es').log();
 
 /* 
 g.greet().log().setLang('fr');
@@ -19,11 +19,11 @@ Iniciar sesiÃ³n: John Doe
 
 var h = Greetr('Harry', 'Porter');
 // console.log(h);
-h.greet(true);
+// h.greet(true);
 
 // Greetings, Harry Porter
 
-console.log(g);
+// console.log(g);
 /* 
 Greetr.init {firstName: "John", lastName: "Doe", language: "es"}
 firstName:"John"
@@ -52,3 +52,14 @@ __lookupSetter__:ƒ __lookupSetter__()
 get __proto__:ƒ __proto__()
 set __proto__:ƒ __proto__() 
 */
+
+$('#login').click(function(){
+
+    var loginGrtr = G$('John', 'Doe'); // with mini framework, we don't type 'new' keyword.
+    console.log(loginGrtr);
+
+    $('#logindiv').hide();
+
+    console.log($('#lang').val());
+    loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+});

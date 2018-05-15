@@ -1,5 +1,6 @@
 (function(global, $){ // execution context and take parameters
 
+    // 'new' an object
     var Greetr = function(firstName, lastName, language) { // have a function constructor builds an object
 
         return new Greetr.init(firstName, lastName, language); // generate new object with three properties
@@ -65,6 +66,26 @@
             this.validate();
 
             return this;
+        },
+        HTMLGreeting: function(selector, formal) {
+            if (!$) {
+                throw 'jQuery not loaed';
+            }
+
+            if (!selector) {
+                throw 'Missing jQuery selector';
+            }
+
+            var msg;
+            if (formal) {
+                msg = this.formalGreeting();
+            } else {
+                msg = this.greeting();
+            }
+
+            $(selector).html(msg);
+
+            return this;
         }
     };
 
@@ -74,6 +95,8 @@
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';
+
+        self.validate();
     }; // this object's lexical environment is this whole function -> can access 'this' variable.
     // Thank closures to keep 'this' variable even function invoke immediately.
 
