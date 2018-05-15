@@ -277,3 +277,10 @@ _ Class is not an object, it's just a definition, it's like a template.
 _ JavaScript doesn't have class. This is an object.
 
 _ Syntactic sugar: a different way to type something that doesn't change how it works under the hood.
+
+----------------------------
+72 - Deep dive into JQuery
+
+_ Method Changing: calling one method after one another, and each method affects the parent object.
+
+_ So obj.method1().method2() where both methods end up with a 'this' variable pointing at 'obj'.

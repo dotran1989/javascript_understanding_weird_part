@@ -37,7 +37,7 @@
 	}
 
 // Pass this if window is not defined yet
-} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
+} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) { //-- function expression
 
 // Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1
 // throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
@@ -136,7 +136,7 @@ var
 
 		// The jQuery object is actually just the init constructor 'enhanced'
 		// Need init if jQuery is called (just allow error to be thrown if not included)
-		return new jQuery.fn.init( selector, context );
+		return new jQuery.fn.init( selector, context ); //-- 'new' object
 	},
 
 	// Support: Android <=4.0 only
@@ -225,7 +225,7 @@ jQuery.fn = jQuery.prototype = { //-- fn is pointing at the same memory spot as 
 	splice: arr.splice
 };
 
-jQuery.extend = jQuery.fn.extend = function() {
+jQuery.extend = jQuery.fn.extend = function() { //-- function expression 
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[ 0 ] || {},
 		i = 1,
