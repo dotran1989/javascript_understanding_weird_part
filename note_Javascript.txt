@@ -271,3 +271,10 @@ _ Reflection: an object can look at itself, listing and changing it's properties
 _ A normal function that is used to construct objects.
 
 _ The 'this' variable points a new empty object, and that object is returned from the function automatically.
+
+----------------------------
+58 - Function constructor and prototype
+
+_ Prototype property on a function is not the prototype of the function. 
+
+_ It's the prototype of any object created if you're using the function as a function constructor.
